@@ -1,0 +1,74 @@
+@import url("./normalize.scss");
+body {
+  height: 2000px;
+  background-color: lightblue;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+}
+
+.header .navbar {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: white !important;
+}
+
+.header .navbar a.nav-link {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header .navbar a.nav-link:hover {
+  color: orange;
+}
+
+.header-top-info {
+  background-image: url("https://img5.goodfon.ru/original/1920x1080/9/e2/fon-oboi-pikseli-kvadrat-oranzhevyi.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+}
+
+.header-top-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+}
+
+.header-top-info .container .inner-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header-top-info .container .inner-info .info-links {
+  font-size: 14px;
+  color: white;
+}
+
+.header-top-info .container .inner-info .info-links i {
+  font-size: 12px;
+}
+
+.header-content {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

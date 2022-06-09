@@ -1,0 +1,57 @@
+@import url("./normalize.scss");
+
+body {
+  height: 2000px;
+  background-color: lightblue;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+
+  .navbar {
+    transition: all 0.2s linear;
+    // height: 65px;
+    background-color: white !important;
+
+    a.nav-link {
+      transition: all 0.2s linear;
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+}
+
+.header-top-info {
+  background-image: url("https://img5.goodfon.ru/original/1920x1080/9/e2/fon-oboi-pikseli-kvadrat-oranzhevyi.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    .inner-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+
+      .info-links {
+        font-size: 14px;
+        color: white;
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.header-content {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
