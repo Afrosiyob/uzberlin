@@ -31,20 +31,34 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body>
+<body id="scroll-top">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class=" header-top-info">
+
+
+    <div id="preloader" class="preloader">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <div class="line line-4"></div>
+        <div class="line line-5"></div>
+    </div>
+
+    <a class="scroll-top" href="#scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class=" header-top-info ">
         <div class="container">
             <div class="inner-info">
-                <a href="tel:+998990000000" class="info-links"> <i class="fa fa-phone"></i> +99899 000 00 00 </a>
-                <a href="#!" class="info-links"> <i class="fa fa-mail"></i> +99899 000 00 00 </a>
+                <a href="tel:+998990000000" class="info-links mr-3"> <i class="fa fa-phone"></i> +99899 000 00 00 </a>
+                <a href="#!" class="info-links"> <i class="fa fa-globe"></i> test@gmail.com </a>
             </div>
         </div>
     </div>
-    <header class="header sticky-top">
-        <nav id="headerNav" class="navbar navbar-expand-lg navbar-light">
+    <header class="header sticky-top ">
+        <nav id="headerNav" class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -81,7 +95,36 @@
 
 
     <div class="header-content">
+        <div class="bg-radient">
+            <div class="container">
+                <div class="inner-info">
 
+                    <div class="left-info wow fadeInDown">
+
+                        <div class="mb-2">
+                            <h4 class="under-line-orange"> Education subtitle </h4>
+                        </div>
+                        <div>
+
+                            <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repellat. </h1>
+
+                        </div>
+                        <div class="mt-4 under-info ">
+                            <button class="orange-btn-big waves-effect">
+                                Get Start
+                            </button>
+
+                            <button class="blue-btn-big waves-effect">
+                                View
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -91,10 +134,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -105,13 +148,13 @@
 
     <script src="./js/wow.js"></script>
     <script>
-        wow = new WOW({
+        wow = new WOW( {
             animateClass: "animated",
             offset: 100,
-            callback: function (box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
+            callback: function ( box ) {
+                console.log( "WOW: animating <" + box.tagName.toLowerCase() + ">" );
             },
-        });
+        } );
         wow.init();
     </script>
 

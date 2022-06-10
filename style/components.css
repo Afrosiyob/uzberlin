@@ -1,0 +1,36 @@
+button.orange-btn-big {
+  padding: 12px 40px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff5a2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+button.blue-btn-big {
+  padding: 12px 40px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-transform: uppercase;
+  background-color: #092ace;
+}
+/*# sourceMappingURL=components.css.map */

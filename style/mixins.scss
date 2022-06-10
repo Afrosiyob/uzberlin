@@ -1,0 +1,12 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin media($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
