@@ -105,8 +105,6 @@ html {
 }
 
 * {
-  padding: 0;
-  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -122,8 +120,14 @@ a {
 }
 
 body {
+  padding: 0;
+  margin-bottom: 500px;
   height: 2000px;
-  background-color: white;
+  background-image: url("https://img.freepik.com/free-photo/top-view-of-natural-tiles-stone-floor-in-luxury-seamless-glitter-pattern-for-interior-and-exterior_38607-378.jpg?w=2000");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 body .preloader {
@@ -536,5 +540,111 @@ body .scroll-top-active {
   .header-content {
     background-position: right;
   }
+}
+
+.about-us {
+  margin-top: 100px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.about-us .right-box {
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(100%, #092d79), to(#00d4ff));
+  background: linear-gradient(0deg, #020024 0%, #092d79 100%, #00d4ff 100%);
+  position: absolute;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  top: 20px;
+  right: 0;
+  width: 40%;
+  height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us .right-box {
+    display: none;
+  }
+}
+
+.about-us .left-content {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.about-us .left-content h2 {
+  font-size: 45px;
+  color: black;
+}
+
+.about-us .left-content p {
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us .left-content {
+    margin-bottom: 50px;
+  }
+}
+
+.about-us .right-content {
+  position: relative;
+}
+
+.about-us .right-content .right-box-text-title {
+  position: absolute;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  right: -40%;
+  bottom: 10px;
+  padding: 15px 30px;
+  background-color: #ff5a2c;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-us .right-content .right-box-text-title {
+    right: 10%;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us .right-content .right-box-text-title {
+    right: 10%;
+    font-size: 15px;
+  }
+}
+
+.about-us .right-content img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.advantages {
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.advantages h2.title {
+  font-size: 45px;
+  color: black;
+}
+
+.advantages .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages .card-box i {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

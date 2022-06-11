@@ -5,6 +5,16 @@
   align-content: center;
 }
 
+@mixin blueGradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 45, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
 @mixin media($value) {
   @media screen and (max-width: $value) {
     @content;
