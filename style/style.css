@@ -638,13 +638,50 @@ body .scroll-top-active {
   color: black;
 }
 
-.advantages .card-box {
+.advantages .advantages-card .card-box-top {
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.advantages .advantages-card .card-box-top:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.advantages .advantages-card .card-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-.advantages .card-box i {
-  color: red;
+.advantages .advantages-card .card-box .book-mark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: auto;
+}
+
+.advantages .advantages-card .card-box img {
+  width: 50px;
+  height: 50px;
+}
+
+.advantages .advantages-card .card-box p {
+  font-size: 14px;
+}
+
+.advantages .advantages-card .card-box .right-card {
+  padding: 0 20px;
+}
+
+.team-content {
+  margin-top: 150px;
+  padding: 50px 0;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(100%, #092d79), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #092d79 100%, #00d4ff 100%);
 }
 /*# sourceMappingURL=style.css.map */

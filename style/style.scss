@@ -502,7 +502,6 @@ body {
 
 .advantages {
   margin-top: 150px;
-
   background-color: #fff;
   padding: 50px 0;
 
@@ -511,10 +510,48 @@ body {
     color: black;
   }
 
-  .card-box {
-    display: flex;
-    i {
-      color: red;
+  .advantages-card {
+    .card-box-top {
+      cursor: pointer;
+      transition: all 0.2s linear;
+      &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+    }
+    .card-box {
+      display: flex;
+      position: relative;
+
+      .book-mark {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: auto;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        font-size: 14px;
+      }
+
+      .right-card {
+        padding: 0 20px;
+      }
     }
   }
+}
+
+.team-content {
+  margin-top: 150px;
+  padding: 50px 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 45, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
