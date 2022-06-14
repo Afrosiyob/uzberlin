@@ -114,7 +114,13 @@ a {
 }
 
 .under-line-orange {
-  border-bottom: 2px solid #ff5a2c;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ffd657;
+  display: inline;
+}
+.under-line-white {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
   display: inline;
 }
 
@@ -259,25 +265,19 @@ body {
       transition: all 0.2s linear;
       border-bottom: 2px solid transparent;
       &:hover {
-        border-bottom: 2px solid #ff5a2c;
-        color: #ff5a2c;
+        border-bottom: 2px solid #ffd657;
+        color: #ffd657;
       }
     }
   }
 
   .navbar-under {
-    background: rgba(2, 0, 36, 0.5) !important;
     transition: all 0.5s linear !important;
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 0.9) 0%,
-      rgba(9, 45, 121, 0.9) 100%,
-      rgba(0, 212, 255, 0.9) 100%
-    ) !important;
+    background: #724e23;
     a {
       color: white !important;
       &:hover {
-        color: #ff5a2c !important;
+        color: #ffd657 !important;
       }
     }
   }
@@ -286,13 +286,7 @@ body {
 .header-top-info {
   // background-image: url("https://img5.goodfon.ru/original/1920x1080/9/e2/fon-oboi-pikseli-kvadrat-oranzhevyi.jpg");
 
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 45, 121, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #ffd657;
   background-size: cover;
   background-position: center;
   height: 40px;
@@ -309,7 +303,7 @@ body {
 
       .info-links {
         font-size: 14px;
-        color: white;
+        color: black;
         i {
           font-size: 12px;
         }
@@ -379,8 +373,8 @@ body {
             padding: 12px 40px;
             color: white;
             text-transform: uppercase;
-            background-color: #ff5a2c;
-            border: 2px solid #ff5a2c;
+            background-color: #ffd657;
+            border: 2px solid #ffd657;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -389,9 +383,9 @@ body {
             transition: all 0.2s linear;
 
             &:hover {
-              border: 2px solid #ff5a2c;
+              border: 2px solid #ffd657;
               background-color: white;
-              color: #ff5a2c;
+              color: #ffd657;
             }
           }
 
@@ -560,33 +554,27 @@ body {
 .team-content {
   margin-top: 150px;
   padding: 50px 0;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 45, 121, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #ffd657;
 
   h2.title {
     font-size: 45px;
-    color: white;
+    color: black;
   }
 
   .left-content-team {
     h1 {
-      color: white;
+      color: black;
     }
 
     p {
-      color: white;
+      color: black;
     }
   }
 
   .team-carousel {
     .owl-dot.active {
       span {
-        background-color: $global-orange;
+        background-color: white;
         transition: all 0.2s linear;
         width: 30px;
       }
@@ -621,7 +609,7 @@ body {
               transition: all 0.2s linear;
 
               width: 100%;
-              color: white;
+              color: black;
             }
             @include media(768px) {
               width: 100%;
@@ -630,7 +618,7 @@ body {
           }
 
           p {
-            color: white;
+            color: black;
           }
 
           ul {
@@ -638,7 +626,7 @@ body {
             margin: 0;
             list-style-type: none;
             li.person-info-li {
-              color: white;
+              color: black;
               display: flex;
               align-items: center;
               align-content: center;
@@ -647,7 +635,7 @@ body {
                 width: 20px !important;
                 height: 2px;
                 border-radius: 2px;
-                background-color: #ff5a2c;
+                background-color: #ffd657;
                 margin-right: 10px;
               }
               div {
