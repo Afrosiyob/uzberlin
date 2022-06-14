@@ -286,31 +286,45 @@ body {
 .header-top-info {
   // background-image: url("https://img5.goodfon.ru/original/1920x1080/9/e2/fon-oboi-pikseli-kvadrat-oranzhevyi.jpg");
 
-  background: #ffd657;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 40px;
   .container {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
-    height: 100%;
-    .inner-info {
+    .top-header-lang {
+      height: 100%;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: end;
       align-items: center;
       align-content: center;
 
-      .info-links {
-        font-size: 14px;
-        color: black;
-        i {
-          font-size: 12px;
-        }
-      }
+      button {
+        margin-left: 10px;
+        border: none;
+        background-color: transparent;
 
-      @media all and (max-width: 768px) {
-        width: 100%;
+        padding: 0 7px;
+        transition: all 0.2s linear;
+
+        &:hover {
+          background-color: white;
+          border-radius: 6px;
+          color: orange;
+        }
+
+        img {
+          height: 25px;
+          width: auto;
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -532,7 +546,11 @@ body {
 .team-content {
   margin-top: 150px;
   padding: 50px 0;
-  background: #ffd657;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   h2.title {
     font-size: 45px;
@@ -703,6 +721,45 @@ body {
         width: 70px;
         height: 70px;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+.footer-content {
+  padding: 50px 0;
+  // background-color: #ffd657;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h4 {
+      color: black;
+      padding-bottom: 5px;
+      border-bottom: 2px solid white;
+      display: block;
+    }
+
+    .sot-set {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin-top: 10px;
+      img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+      }
+      p {
+        padding: 0;
+        margin: 0;
       }
     }
   }

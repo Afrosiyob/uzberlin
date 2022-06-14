@@ -344,31 +344,20 @@ body .scroll-top-active {
 }
 
 .header-top-info {
-  background: #ffd657;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   height: 40px;
 }
 
 .header-top-info .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   height: 100%;
-}
-
-.header-top-info .container .inner-info {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -376,19 +365,41 @@ body .scroll-top-active {
       align-content: center;
 }
 
-.header-top-info .container .inner-info .info-links {
-  font-size: 14px;
-  color: black;
+.header-top-info .container .top-header-lang {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.header-top-info .container .inner-info .info-links i {
-  font-size: 12px;
+.header-top-info .container .top-header-lang button {
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  padding: 0 7px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-@media all and (max-width: 768px) {
-  .header-top-info .container .inner-info {
-    width: 100%;
-  }
+.header-top-info .container .top-header-lang button:hover {
+  background-color: white;
+  border-radius: 6px;
+  color: orange;
+}
+
+.header-top-info .container .top-header-lang button img {
+  height: 25px;
+  width: auto;
+  margin-right: 5px;
 }
 
 .header-content {
@@ -665,7 +676,11 @@ body .scroll-top-active {
 .team-content {
   margin-top: 150px;
   padding: 50px 0;
-  background: #ffd657;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .team-content h2.title {
@@ -859,5 +874,58 @@ body .scroll-top-active {
   height: 70px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer-content {
+  padding: 50px 0;
+  background-image: url("http://trumpwallpapers.com/wp-content/uploads/Yellow-Aesthetic-Wallpaper-01-2560x1600-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.footer-content .footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-content .footer-row h4 {
+  color: black;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  display: block;
+}
+
+.footer-content .footer-row .sot-set {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+}
+
+.footer-content .footer-row .sot-set img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.footer-content .footer-row .sot-set p {
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
